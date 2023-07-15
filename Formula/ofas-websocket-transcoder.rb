@@ -8,7 +8,7 @@ class OfasWebsocketTranscoder < Formula
     # depends_on "cmake" => :build
   
     def install
-      bin.install_symlink ofas_websocket_transcoder
+      bin.install_symlink "ofas_websocket_transcoder"
       # ENV.deparallelize
       #system "./configure", *std_configure_args, "--disable-silent-rules"
       # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
