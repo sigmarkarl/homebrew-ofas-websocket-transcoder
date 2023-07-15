@@ -6,6 +6,7 @@ class OfasWebsocketTranscoder < Formula
     license "MIT License"
   
     # depends_on "cmake" => :build
+    bin.executable "ofas_websocket_transcoder"
   
     def install
       bin.install_symlink "ofas_websocket_transcoder"
