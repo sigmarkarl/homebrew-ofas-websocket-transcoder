@@ -6,14 +6,15 @@ class OfasWebsocketTranscoder < Formula
     license "MIT License"
   
     # depends_on "cmake" => :build
-    bin.executable "ofas_websocket_transcoder"
   
     def install
+      bin.executable "ofas_websocket_transcoder"
       bin.install_symlink "ofas_websocket_transcoder"
+      system "ln", "-s", bin/my-executable "/opt/homebrew/bin/my-executable"
       # ENV.deparallelize
-      #system "./configure", *std_configure_args, "--disable-silent-rules"
+      # system "./configure", *std_configure_args, "--disable-silent-rules"
       # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-      #system "make", "install"
+      # system "make", "install"
     end
   
     test do
