@@ -13,7 +13,7 @@ class OfasWebsocketTranscoder < Formula
       bin.install "#{buildpath}/ofas-websocket-transcoder"
       system "chmod", "+x", "#{bin}/ofas-websocket-transcoder"
       # ln -s bin/ocean-websocket-transcoder /opt/homebrew/bin/ocean-websocket-transcoder
-      system "ln", "-s", "#{bin}/ofas-websocket-transcoder", "/opt/homebrew/bin/ofas-websocket-transcoder"
+      # system "ln", "-s", "#{bin}/ofas-websocket-transcoder", "/opt/homebrew/bin/ofas-websocket-transcoder"
       # ENV.deparallelize
       # system "./configure", *std_configure_args, "--disable-silent-rules"
       # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
