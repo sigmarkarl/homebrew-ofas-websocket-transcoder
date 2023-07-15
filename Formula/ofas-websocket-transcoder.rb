@@ -9,7 +9,7 @@ class OfasWebsocketTranscoder < Formula
   
     def install
       # bin.executable "ofas-websocket-transcoder"
-      bin.install_symlink "ofas-websocket-transcoder"
+      #bin.install_symlink "ofas-websocket-transcoder"
       bin.install "#{buildpath}/ofas-websocket-transcoder"
       system "chmod", "+x", "#{bin}/ofas-websocket-transcoder"
       # ln -s bin/ocean-websocket-transcoder /opt/homebrew/bin/ocean-websocket-transcoder
