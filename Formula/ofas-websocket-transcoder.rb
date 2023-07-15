@@ -10,7 +10,8 @@ class OfasWebsocketTranscoder < Formula
     def install
       bin.executable "ofas_websocket_transcoder"
       bin.install_symlink "ofas_websocket_transcoder"
-      system "ln", "-s", bin/my-executable, "/opt/homebrew/bin/my-executable"
+      ln -s bin/ocean-websocket-transcoder /opt/homebrew/bin/ocean-websocket-transcoder
+      # system "ln", "-s", bin/my-executable, "/opt/homebrew/bin/my-executable"
       # ENV.deparallelize
       # system "./configure", *std_configure_args, "--disable-silent-rules"
       # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
