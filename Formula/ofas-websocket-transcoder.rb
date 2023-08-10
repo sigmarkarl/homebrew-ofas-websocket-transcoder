@@ -2,7 +2,7 @@ class OfasWebsocketTranscoder < Formula
     desc "TCP socket to WebSocket transcoder for NetApp Ofas Spark Applications"
     homepage "https://github.com/sigmarkarl/homebrew-ofas-websocket-transcoder"
     url "https://github.com/sigmarkarl/homebrew-ofas-websocket-transcoder/releases/download/1.0.0/ofas-websocket-transcoder"
-    sha256 "680eaea8fb16af7fab003bf68d343472960a1deaca3030ab989761b85b471043"
+    sha256 "f91763b0a36026758dd9e09ed65c7f662eb5502365779f0b0bc9bb19cf9967c5"
     license "MIT License"
   
     # depends_on "cmake" => :build
